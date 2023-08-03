@@ -1,0 +1,249 @@
+@import url("https://use.typekit.net/yxk3ens.css");
+
+body {
+  background: linear-gradient(-45deg, #bcf4de, #cde5d7, #ded6d1, #eec6ca, #ffb7c3);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+body::before {
+  display:block;
+  content: '';
+  height:60px; /* or whatever */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li,
+a {
+  font-family: "source-code-pro", monospace;
+  font-weight: 400;
+  font-style: bold;
+  font-size: 16px;
+  color: #24252A;
+  text-decoration: none;
+}
+
+ul li a.active-page {
+  color: #ff4f8c;
+}
+
+h1 {
+  font-family: "futura-pt-bold", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 40px;
+  color: #24252A;
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 0;
+  padding-right: 30px;
+}
+
+p {
+  font-family: "source-code-pro", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: #24252A;
+  padding: 5%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 7%;
+  position: relative;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+footer {
+  font-family: "source-code-pro", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: #24252A;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.box {
+  box-sizing: content-box;
+  color:#b3b3b3;
+  background: #fbf6f4;
+  width: 96%;
+  height:auto;
+  box-shadow: 0px 5px 20px 1px;
+  border-radius: .4em;
+  position: relative;
+  margin: auto;
+  margin-top: 2%;
+}
+
+.members {
+  font-family: "source-code-pro", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: #24252A;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  cursor: pointer;
+  max-width: 110%;
+  height: auto;
+  min-width: 300px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* Added */
+}
+
+.menu-toggle {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.nav-links {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  position: relative;
+}
+
+.nav-links li {
+  padding: 0px 20px;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: #fa7da7;
+}
+
+@media screen and (max-width: 768px) {
+  .logo-container {
+    justify-content: center;
+    position: relative;
+  }
+
+  .nav-links {
+    display: none;
+    text-align: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 96%;
+    height: auto;
+    background-color: #fbf6f4;
+    padding: 20px;
+    border-radius: .4em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1;
+    margin: 2%;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+
+  .menu-icon {
+    display: inline-block;
+    width: 30px;
+    height: 4px;
+    background-color: #24252A;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+  }
+
+  .menu-icon::before,
+  .menu-icon::after {
+    content: "";
+    position: absolute;
+    background-color: #24252A;
+    width: 100%;
+    height: 4px;
+    border-radius: 3px;
+    transition: transform 0.3s ease;
+  }
+
+  .menu-icon::before {
+    top: -8px;
+  }
+
+  .menu-icon::after {
+    bottom: -8px;
+  }
+
+  .menu-toggle:checked + .menu-icon {
+    background-color: transparent;
+  }
+
+  .menu-toggle:checked + .menu-icon::before {
+    transform: rotate(45deg);
+    top: 0;
+    background-color: #24252A;
+  }
+
+  .menu-toggle:checked + .menu-icon::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+    background-color: #24252A;
+  }
+
+  .menu-toggle:checked ~ .nav-links {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    position: absolute; /* Added */
+    top: 0; /* Added */
+    left: 0; /* Added */
+    margin-top: 20px; /* Added */
+  }
+}
+
