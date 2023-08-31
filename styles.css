@@ -240,10 +240,10 @@ nav {
     display: block;
     opacity: 1;
     visibility: visible;
-    position: absolute; /* Added */
-    top: 0; /* Added */
-    left: 0; /* Added */
-    margin-top: 20px; /* Added */
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    margin-top: 20px; 
   }
 }
 

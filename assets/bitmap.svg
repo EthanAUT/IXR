@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="267.28473mm"
+   height="160.67918mm"
+   viewBox="0 0 267.28473 160.67918"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="bitmap.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(35.255521,-66.341154)">
+    <text
+       xml:space="preserve"
+       style="font-size:105.833px;letter-spacing:-21.3545px;fill:#000000;stroke-width:0.264583"
+       x="-36.49575"
+       y="93.127121"
+       id="text2"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:105.833px;font-family:'.ThonburiUIWatch';-inkscape-font-specification:'.ThonburiUIWatch Bold';letter-spacing:-21.3545px;stroke-width:0.264583"
+         x="-36.49575"
+         y="93.127121"
+         dy="50.16">ARDN</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:105.833px;font-family:'.ThonburiUIWatch';-inkscape-font-specification:'.ThonburiUIWatch Bold';letter-spacing:-21.3545px;stroke-width:0.264583"
+         x="-36.49575"
+         y="225.41837"
+         id="tspan3">541 .</tspan></text>
+  </g>
+</svg>
